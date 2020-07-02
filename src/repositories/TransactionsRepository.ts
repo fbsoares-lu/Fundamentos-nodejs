@@ -27,8 +27,8 @@ class TransactionsRepository {
 
   public getBalance(): Balance {
 
-    var income = 0;
-    var outcome = 0;
+    let income = 0;
+    let outcome = 0;
 
     this.transactions.reduce((total, elemento) => {
       if (elemento.type === 'income') {
